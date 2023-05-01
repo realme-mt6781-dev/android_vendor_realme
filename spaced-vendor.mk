@@ -1009,9 +1009,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/firmware/soc2_2_ram_wifi_2_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc2_2_ram_wifi_2_1_hdr.bin \
     vendor/realme/spaced/proprietary/vendor/firmware/soc2_2_ram_wifi_2a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc2_2_ram_wifi_2a_1_hdr.bin \
     vendor/realme/spaced/proprietary/vendor/lib/AVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/AVCSecureVdecCA.so \
-    vendor/realme/spaced/proprietary/vendor/lib/VP9SecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/VP9SecureVdecCA.so \
     vendor/realme/spaced/proprietary/vendor/lib/HEVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/HEVCSecureVdecCA.so \
-    vendor/realme/spaced/proprietary/vendor/lib/libAVCSecureVencCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAVCSecureVencCA.so \
+    vendor/realme/spaced/proprietary/vendor/lib/VP9SecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/VP9SecureVdecCA.so \
     vendor/realme/spaced/proprietary/vendor/lib/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/arm.graphics-V1-ndk_platform.so \
     vendor/realme/spaced/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
     vendor/realme/spaced/proprietary/vendor/lib/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_mali.so \
@@ -1052,6 +1051,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so \
     vendor/realme/spaced/proprietary/vendor/lib/hw/vendor.mediatek.hardware.pq@2.13-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.pq@2.13-impl.so \
     vendor/realme/spaced/proprietary/vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so \
+    vendor/realme/spaced/proprietary/vendor/lib/hw/vulkan.mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.mali.so \
     vendor/realme/spaced/proprietary/vendor/lib/imx350_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/imx350_mipi_raw_IdxMgr.so \
     vendor/realme/spaced/proprietary/vendor/lib/imx350_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/imx350_mipi_raw_tuning.so \
     vendor/realme/spaced/proprietary/vendor/lib/imx386_mipi_mono_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/imx386_mipi_mono_IdxMgr.so \
@@ -1089,6 +1089,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/lib/lib3a.n3d3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.n3d3a.so \
     vendor/realme/spaced/proprietary/vendor/lib/lib3a.sensors.color.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.sensors.color.so \
     vendor/realme/spaced/proprietary/vendor/lib/lib3a.sensors.flicker.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.sensors.flicker.so \
+    vendor/realme/spaced/proprietary/vendor/lib/libAVCSecureVencCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAVCSecureVencCA.so \
     vendor/realme/spaced/proprietary/vendor/lib/libCamera_gc02m1bsymipiraw21690_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1bsymipiraw21690_E2EHDR_Preview.so \
     vendor/realme/spaced/proprietary/vendor/lib/libCamera_gc02m1bsymipiraw21690_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1bsymipiraw21690_E2EHDR_Video.so \
     vendor/realme/spaced/proprietary/vendor/lib/libCamera_gc02m1bsymipiraw21690_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1bsymipiraw21690_Face_Capture.so \
@@ -1879,7 +1880,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/lib/libspeechparser_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeechparser_vendor.so \
     vendor/realme/spaced/proprietary/vendor/lib/libssl-md.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssl-md.so \
     vendor/realme/spaced/proprietary/vendor/lib/libssl-ss.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssl-ss.so \
-    vendor/realme/spaced/proprietary/vendor/lib/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrighthw.so \
     vendor/realme/spaced/proprietary/vendor/lib/libstereoinfoaccessor_vsdof.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstereoinfoaccessor_vsdof.so \
     vendor/realme/spaced/proprietary/vendor/lib/libstrongswan.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstrongswan.so \
     vendor/realme/spaced/proprietary/vendor/lib/libsysenv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysenv.so \
@@ -2000,9 +2000,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/lib64/APUWareUtilsServer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/APUWareUtilsServer.so \
     vendor/realme/spaced/proprietary/vendor/lib64/APUWareXrpServer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/APUWareXrpServer.so \
     vendor/realme/spaced/proprietary/vendor/lib64/AVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/AVCSecureVdecCA.so \
-    vendor/realme/spaced/proprietary/vendor/lib64/VP9SecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/VP9SecureVdecCA.so \
     vendor/realme/spaced/proprietary/vendor/lib64/HEVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/HEVCSecureVdecCA.so \
-    vendor/realme/spaced/proprietary/vendor/lib64/libAVCSecureVencCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAVCSecureVencCA.so \
+    vendor/realme/spaced/proprietary/vendor/lib64/VP9SecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/VP9SecureVdecCA.so \
     vendor/realme/spaced/proprietary/vendor/lib64/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/arm.graphics-V1-ndk_platform.so \
     vendor/realme/spaced/proprietary/vendor/lib64/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_mali.so \
     vendor/realme/spaced/proprietary/vendor/lib64/egl/libGLES_meow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_meow.so \
@@ -2051,6 +2050,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so \
     vendor/realme/spaced/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.pq@2.13-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.pq@2.13-impl.so \
     vendor/realme/spaced/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so \
+    vendor/realme/spaced/proprietary/vendor/lib64/hw/vulkan.mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.mali.so \
     vendor/realme/spaced/proprietary/vendor/lib64/imx350_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/imx350_mipi_raw_IdxMgr.so \
     vendor/realme/spaced/proprietary/vendor/lib64/imx350_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/imx350_mipi_raw_tuning.so \
     vendor/realme/spaced/proprietary/vendor/lib64/imx386_mipi_mono_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/imx386_mipi_mono_IdxMgr.so \
@@ -2920,7 +2920,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/lib64/libspeechparser_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspeechparser_vendor.so \
     vendor/realme/spaced/proprietary/vendor/lib64/libssl-md.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssl-md.so \
     vendor/realme/spaced/proprietary/vendor/lib64/libssl-ss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssl-ss.so \
-    vendor/realme/spaced/proprietary/vendor/lib64/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefrighthw.so \
     vendor/realme/spaced/proprietary/vendor/lib64/libstereoinfoaccessor_vsdof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstereoinfoaccessor_vsdof.so \
     vendor/realme/spaced/proprietary/vendor/lib64/libstorage_otp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstorage_otp.so \
     vendor/realme/spaced/proprietary/vendor/lib64/libstrongswan.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstrongswan.so \
@@ -3045,8 +3044,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/lib64/vendor.trustonic.tee@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.trustonic.tee@1.1.so
 
 PRODUCT_PACKAGES += \
-    libcodec2_hidl-mtk@1.0 \
-    libcodec2_vndk-mtk \
     libwifi-hal-mtk \
     ImsService \
     HotwordEnrollmentOKGoogleCORTEXM4 \
