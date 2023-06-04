@@ -6,10 +6,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/realme/spaced
 
 PRODUCT_COPY_FILES += \
-    vendor/realme/spaced/proprietary/bin/kpoc_charger:$(TARGET_COPY_OUT_SYSTEM)/bin/kpoc_charger \
     vendor/realme/spaced/proprietary/bin/vtservice:$(TARGET_COPY_OUT_SYSTEM)/bin/vtservice \
     vendor/realme/spaced/proprietary/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.vtservice.rc \
-    vendor/realme/spaced/proprietary/etc/init/kpoc_charger.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/kpoc_charger.rc \
     vendor/realme/spaced/proprietary/lib/libmtk_vt_wrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtk_vt_wrapper.so \
     vendor/realme/spaced/proprietary/lib/libmtkavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtkavenhancements.so \
     vendor/realme/spaced/proprietary/lib/libmtkperf_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtkperf_client.so \
@@ -24,11 +22,9 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/lib64/libmtk_vt_wrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtk_vt_wrapper.so \
     vendor/realme/spaced/proprietary/lib64/libmtkavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtkavenhancements.so \
     vendor/realme/spaced/proprietary/lib64/libmtkperf_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtkperf_client.so \
-    vendor/realme/spaced/proprietary/lib64/libshowlogo.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libshowlogo.so \
     vendor/realme/spaced/proprietary/lib64/libsignal.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsignal.so \
     vendor/realme/spaced/proprietary/lib64/libsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsink.so \
     vendor/realme/spaced/proprietary/lib64/libsource.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsource.so \
-    vendor/realme/spaced/proprietary/lib64/libsysenv_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsysenv_system.so \
     vendor/realme/spaced/proprietary/lib64/libvcodec_cap.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvcodec_cap.so \
     vendor/realme/spaced/proprietary/lib64/libvcodec_capenc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvcodec_capenc.so \
     vendor/realme/spaced/proprietary/lib64/libvsim-adaptor-client.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvsim-adaptor-client.so \
@@ -37,7 +33,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/odm/bin/hw/vendor.oplus.hardware.charger@1.0-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.charger@1.0-service \
     vendor/realme/spaced/proprietary/odm/bin/hw/vendor.oplus.hardware.oplusSensor@1.0-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.oplusSensor@1.0-service \
     vendor/realme/spaced/proprietary/odm/bin/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-service \
-    vendor/realme/spaced/proprietary/odm/bin/iwpriv_vendor:$(TARGET_COPY_OUT_ODM)/bin/iwpriv_vendor \
     vendor/realme/spaced/proprietary/odm/bin/mtkftm:$(TARGET_COPY_OUT_ODM)/bin/mtkftm \
     vendor/realme/spaced/proprietary/odm/bin/rpmbengclient_test:$(TARGET_COPY_OUT_ODM)/bin/rpmbengclient_test \
     vendor/realme/spaced/proprietary/odm/etc/audio/audio_device/audio_device.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/audio_device/audio_device.xml \
@@ -248,7 +243,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/odm/etc/fad/M_FaceAttribute_RGB_age_gender_1.7.1.model.hardcode:$(TARGET_COPY_OUT_ODM)/etc/fad/M_FaceAttribute_RGB_age_gender_1.7.1.model.hardcode \
     vendor/realme/spaced/proprietary/odm/etc/init/init.oplus.reserve.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.oplus.reserve.rc \
     vendor/realme/spaced/proprietary/odm/etc/init/init.pn8x.nfc.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.pn8x.nfc.rc \
-    vendor/realme/spaced/proprietary/odm/etc/init/init.vendor.oplus.connectivity.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.vendor.oplus.connectivity.rc \
     vendor/realme/spaced/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/realme/spaced/proprietary/odm/etc/init/vendor.oplus.hardware.charger@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.charger@1.0-service.rc \
     vendor/realme/spaced/proprietary/odm/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc \
@@ -259,7 +253,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
     vendor/realme/spaced/proprietary/odm/etc/temperature_profile/sys_high_temp_protect_realme_21684.xml:$(TARGET_COPY_OUT_ODM)/etc/temperature_profile/sys_high_temp_protect_realme_21684.xml \
     vendor/realme/spaced/proprietary/odm/etc/temperature_profile/sys_thermal_control_config.xml:$(TARGET_COPY_OUT_ODM)/etc/temperature_profile/sys_thermal_control_config.xml \
-    vendor/realme/spaced/proprietary/odm/etc/vendor_wifi_rus_config.xml:$(TARGET_COPY_OUT_ODM)/etc/vendor_wifi_rus_config.xml \
     vendor/realme/spaced/proprietary/odm/etc/wifi/txpowerctrl.cfg:$(TARGET_COPY_OUT_ODM)/etc/wifi/txpowerctrl.cfg \
     vendor/realme/spaced/proprietary/odm/etc/wifi/wifi.cfg:$(TARGET_COPY_OUT_ODM)/etc/wifi/wifi.cfg \
     vendor/realme/spaced/proprietary/odm/etc/wifi/wifi_active_channel.cfg:$(TARGET_COPY_OUT_ODM)/etc/wifi/wifi_active_channel.cfg \
@@ -323,7 +316,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/odm/firmware/wifi_active_channel.cfg:$(TARGET_COPY_OUT_ODM)/firmware/wifi_active_channel.cfg \
     vendor/realme/spaced/proprietary/odm/firmware/wifi_passive_channel.cfg:$(TARGET_COPY_OUT_ODM)/firmware/wifi_passive_channel.cfg \
     vendor/realme/spaced/proprietary/odm/init.oplus.fingerprints.rc:$(TARGET_COPY_OUT_ODM)/init.oplus.fingerprints.rc \
-    vendor/realme/spaced/proprietary/odm/init.oplus.seccommon.rc:$(TARGET_COPY_OUT_ODM)/init.oplus.seccommon.rc \
     vendor/realme/spaced/proprietary/odm/lib/anc.capacitive.hal.so:$(TARGET_COPY_OUT_ODM)/lib/anc.capacitive.hal.so \
     vendor/realme/spaced/proprietary/odm/lib/anc.hal.so:$(TARGET_COPY_OUT_ODM)/lib/anc.hal.so \
     vendor/realme/spaced/proprietary/odm/lib/hw/fingerprint.goodix_G2.default.so:$(TARGET_COPY_OUT_ODM)/lib/hw/fingerprint.goodix_G2.default.so \
@@ -379,7 +371,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/odm/lib/vendor.oplus.hardware.orms.ormsHalService@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.orms.ormsHalService@1.0.so \
     vendor/realme/spaced/proprietary/odm/lib/vendor.oplus.hardware.orms@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.orms@1.0.so \
     vendor/realme/spaced/proprietary/odm/lib/vendor.oplus.hardware.radio@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.radio@1.0.so \
-    vendor/realme/spaced/proprietary/odm/lib/vendor.oplus.hardware.wifi@1.1.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.wifi@1.1.so \
     vendor/realme/spaced/proprietary/odm/lib64/anc.capacitive.hal.so:$(TARGET_COPY_OUT_ODM)/lib64/anc.capacitive.hal.so \
     vendor/realme/spaced/proprietary/odm/lib64/anc.hal.so:$(TARGET_COPY_OUT_ODM)/lib64/anc.hal.so \
     vendor/realme/spaced/proprietary/odm/lib64/hw/fingerprint.goodix_G2.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.goodix_G2.default.so \
@@ -392,7 +383,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/odm/lib64/libAlgoProcess.so:$(TARGET_COPY_OUT_ODM)/lib64/libAlgoProcess.so \
     vendor/realme/spaced/proprietary/odm/lib64/libAncHumBokeh.so:$(TARGET_COPY_OUT_ODM)/lib64/libAncHumBokeh.so \
     vendor/realme/spaced/proprietary/odm/lib64/libAncHumVideoBase.so:$(TARGET_COPY_OUT_ODM)/lib64/libAncHumVideoBase.so \
-    vendor/realme/spaced/proprietary/odm/lib64/libadsprpc.so:$(TARGET_COPY_OUT_ODM)/lib64/libadsprpc.so \
     vendor/realme/spaced/proprietary/odm/lib64/libaf6133e.so:$(TARGET_COPY_OUT_ODM)/lib64/libaf6133e.so \
     vendor/realme/spaced/proprietary/odm/lib64/libarcsoft_dualcam_wt_calibration.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_dualcam_wt_calibration.so \
     vendor/realme/spaced/proprietary/odm/lib64/libarcsoft_dualcam_wt_verification.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_dualcam_wt_verification.so \
@@ -401,7 +391,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/odm/lib64/libavformat.so:$(TARGET_COPY_OUT_ODM)/lib64/libavformat.so \
     vendor/realme/spaced/proprietary/odm/lib64/libavutil.so:$(TARGET_COPY_OUT_ODM)/lib64/libavutil.so \
     vendor/realme/spaced/proprietary/odm/lib64/libcalibverifyW_T.so:$(TARGET_COPY_OUT_ODM)/lib64/libcalibverifyW_T.so \
-    vendor/realme/spaced/proprietary/odm/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_ODM)/lib64/libcdsprpc.so \
     vendor/realme/spaced/proprietary/odm/lib64/libdav1d.so.4:$(TARGET_COPY_OUT_ODM)/lib64/libdav1d.so.4 \
     vendor/realme/spaced/proprietary/odm/lib64/libdpservice.so:$(TARGET_COPY_OUT_ODM)/lib64/libdpservice.so \
     vendor/realme/spaced/proprietary/odm/lib64/libegis_hal.so:$(TARGET_COPY_OUT_ODM)/lib64/libegis_hal.so \
@@ -441,7 +430,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/odm/lib64/vendor.oplus.hardware.orms.ormsHalService@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.orms.ormsHalService@1.0.so \
     vendor/realme/spaced/proprietary/odm/lib64/vendor.oplus.hardware.orms@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.orms@1.0.so \
     vendor/realme/spaced/proprietary/odm/lib64/vendor.oplus.hardware.radio@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.radio@1.0.so \
-    vendor/realme/spaced/proprietary/odm/lib64/vendor.oplus.hardware.wifi@1.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.wifi@1.1.so \
     vendor/realme/spaced/proprietary/odm/vendor/app/mcRegistry/030c0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/030c0000000000000000000000000000.drbin \
     vendor/realme/spaced/proprietary/odm/vendor/app/mcRegistry/030c0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/030c0000000000000000000000000000.tlbin \
     vendor/realme/spaced/proprietary/odm/vendor/app/mcRegistry/030f0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/030f0000000000000000000000000000.drbin \
@@ -494,10 +482,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/bin/ccci_rpcd:$(TARGET_COPY_OUT_VENDOR)/bin/ccci_rpcd \
     vendor/realme/spaced/proprietary/vendor/bin/charon:$(TARGET_COPY_OUT_VENDOR)/bin/charon \
     vendor/realme/spaced/proprietary/vendor/bin/chipinfo:$(TARGET_COPY_OUT_VENDOR)/bin/chipinfo \
-    vendor/realme/spaced/proprietary/vendor/bin/dconfig:$(TARGET_COPY_OUT_VENDOR)/bin/dconfig \
-    vendor/realme/spaced/proprietary/vendor/bin/dexecutor:$(TARGET_COPY_OUT_VENDOR)/bin/dexecutor \
     vendor/realme/spaced/proprietary/vendor/bin/dmc_core:$(TARGET_COPY_OUT_VENDOR)/bin/dmc_core \
-    vendor/realme/spaced/proprietary/vendor/bin/doeapp-memtester:$(TARGET_COPY_OUT_VENDOR)/bin/doeapp-memtester \
     vendor/realme/spaced/proprietary/vendor/bin/doeapp-sat:$(TARGET_COPY_OUT_VENDOR)/bin/doeapp-sat \
     vendor/realme/spaced/proprietary/vendor/bin/dtc_vendor:$(TARGET_COPY_OUT_VENDOR)/bin/dtc_vendor \
     vendor/realme/spaced/proprietary/vendor/bin/epdg_wod:$(TARGET_COPY_OUT_VENDOR)/bin/epdg_wod \
@@ -505,10 +490,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/bin/fuelgauged:$(TARGET_COPY_OUT_VENDOR)/bin/fuelgauged \
     vendor/realme/spaced/proprietary/vendor/bin/fuelgauged_nvram:$(TARGET_COPY_OUT_VENDOR)/bin/fuelgauged_nvram \
     vendor/realme/spaced/proprietary/vendor/bin/gsm0710muxd:$(TARGET_COPY_OUT_VENDOR)/bin/gsm0710muxd \
-    vendor/realme/spaced/proprietary/vendor/bin/hostapd_cli:$(TARGET_COPY_OUT_VENDOR)/bin/hostapd_cli \
     vendor/realme/spaced/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.1-service-mediatek \
     vendor/realme/spaced/proprietary/vendor/bin/hw/android.hardware.drm@1.4-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.4-service.widevine \
-    vendor/realme/spaced/proprietary/vendor/bin/hw/android.hardware.gnss-service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss-service.mediatek \
     vendor/realme/spaced/proprietary/vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek \
     vendor/realme/spaced/proprietary/vendor/bin/hw/android.hardware.keymaster@4.1-service.trustonic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.1-service.trustonic \
     vendor/realme/spaced/proprietary/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.c2@1.2-mediatek \
@@ -516,9 +499,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron \
     vendor/realme/spaced/proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element@1.2-service-mediatek \
     vendor/realme/spaced/proprietary/vendor/bin/hw/android.hardware.thermal@2.0-service.mtk:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.thermal@2.0-service.mtk \
-    vendor/realme/spaced/proprietary/vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb@1.2-service-mediatekv2 \
     vendor/realme/spaced/proprietary/vendor/bin/hw/camerahalserver:$(TARGET_COPY_OUT_VENDOR)/bin/hw/camerahalserver \
-    vendor/realme/spaced/proprietary/vendor/bin/hw/hostapd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/hostapd \
     vendor/realme/spaced/proprietary/vendor/bin/hw/mtkfusionrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mtkfusionrild \
     vendor/realme/spaced/proprietary/vendor/bin/hw/tetheroffloadservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/tetheroffloadservice \
     vendor/realme/spaced/proprietary/vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service \
@@ -526,11 +507,9 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.mms@1.6-service \
     vendor/realme/spaced/proprietary/vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service \
     vendor/realme/spaced/proprietary/vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.nvram@1.1-service \
-    vendor/realme/spaced/proprietary/vendor/bin/hw/vendor.mediatek.hardware.nwk_opt@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.nwk_opt@1.0-service \
     vendor/realme/spaced/proprietary/vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.pq@2.2-service \
     vendor/realme/spaced/proprietary/vendor/bin/hw/vendor.trustonic.tee@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.trustonic.tee@1.1-service \
     vendor/realme/spaced/proprietary/vendor/bin/hw/vtservice_hidl:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vtservice_hidl \
-    vendor/realme/spaced/proprietary/vendor/bin/hw/wpa_supplicant:$(TARGET_COPY_OUT_VENDOR)/bin/hw/wpa_supplicant \
     vendor/realme/spaced/proprietary/vendor/bin/ipsec_mon:$(TARGET_COPY_OUT_VENDOR)/bin/ipsec_mon \
     vendor/realme/spaced/proprietary/vendor/bin/jpegtool:$(TARGET_COPY_OUT_VENDOR)/bin/jpegtool \
     vendor/realme/spaced/proprietary/vendor/bin/lbs_hidl_service:$(TARGET_COPY_OUT_VENDOR)/bin/lbs_hidl_service \
@@ -555,7 +534,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/bin/rt5512_calibration:$(TARGET_COPY_OUT_VENDOR)/bin/rt5512_calibration \
     vendor/realme/spaced/proprietary/vendor/bin/rttv:$(TARGET_COPY_OUT_VENDOR)/bin/rttv \
     vendor/realme/spaced/proprietary/vendor/bin/starter:$(TARGET_COPY_OUT_VENDOR)/bin/starter \
-    vendor/realme/spaced/proprietary/vendor/bin/stp_dump3:$(TARGET_COPY_OUT_VENDOR)/bin/stp_dump3 \
     vendor/realme/spaced/proprietary/vendor/bin/stroke:$(TARGET_COPY_OUT_VENDOR)/bin/stroke \
     vendor/realme/spaced/proprietary/vendor/bin/thermal:$(TARGET_COPY_OUT_VENDOR)/bin/thermal \
     vendor/realme/spaced/proprietary/vendor/bin/thermal_manager:$(TARGET_COPY_OUT_VENDOR)/bin/thermal_manager \
@@ -722,15 +700,12 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Vodafone.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Vodafone.xml \
     vendor/realme/spaced/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc \
     vendor/realme/spaced/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
-    vendor/realme/spaced/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/realme/spaced/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
     vendor/realme/spaced/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service.trustonic.rc \
     vendor/realme/spaced/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek.rc \
     vendor/realme/spaced/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc \
     vendor/realme/spaced/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/realme/spaced/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.mtk.rc \
-    vendor/realme/spaced/proprietary/vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc \
-    vendor/realme/spaced/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
     vendor/realme/spaced/proprietary/vendor/etc/init/atci_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atci_service.rc \
     vendor/realme/spaced/proprietary/vendor/etc/init/atcid.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atcid.rc \
     vendor/realme/spaced/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
@@ -741,10 +716,11 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/realme/spaced/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/realme/spaced/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
-    vendor/realme/spaced/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc \
     vendor/realme/spaced/proprietary/vendor/etc/init/init.bip.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bip.rc \
     vendor/realme/spaced/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/realme/spaced/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
+    vendor/realme/spaced/proprietary/vendor/etc/init/init.connfem.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.connfem.rc \
+    vendor/realme/spaced/proprietary/vendor/etc/init/init.fpsgo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fpsgo.rc \
     vendor/realme/spaced/proprietary/vendor/etc/init/init.md_apps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.md_apps.rc \
     vendor/realme/spaced/proprietary/vendor/etc/init/init.thermal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal.rc \
     vendor/realme/spaced/proprietary/vendor/etc/init/init.thermal_manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_manager.rc \
@@ -778,7 +754,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc \
     vendor/realme/spaced/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc \
     vendor/realme/spaced/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
-    vendor/realme/spaced/proprietary/vendor/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc \
     vendor/realme/spaced/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
     vendor/realme/spaced/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
     vendor/realme/spaced/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
@@ -944,7 +919,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
     vendor/realme/spaced/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
     vendor/realme/spaced/proprietary/vendor/etc/virtual-spn-conf-by-imsi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-imsi.xml \
-    vendor/realme/spaced/proprietary/vendor/etc/wfd_source_capability.csv:$(TARGET_COPY_OUT_VENDOR)/etc/wfd_source_capability.csv \
     vendor/realme/spaced/proprietary/vendor/firmware/BT_FW.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/BT_FW.cfg \
     vendor/realme/spaced/proprietary/vendor/firmware/WIFI_RAM_CODE_soc2_2_2_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/WIFI_RAM_CODE_soc2_2_2_1.bin \
     vendor/realme/spaced/proprietary/vendor/firmware/WIFI_RAM_CODE_soc2_2_2a_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/WIFI_RAM_CODE_soc2_2_2a_1.bin \
@@ -1002,7 +976,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/firmware/soc2_2_ram_wifi_2_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc2_2_ram_wifi_2_1_hdr.bin \
     vendor/realme/spaced/proprietary/vendor/firmware/soc2_2_ram_wifi_2a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc2_2_ram_wifi_2a_1_hdr.bin \
     vendor/realme/spaced/proprietary/vendor/lib/AVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/AVCSecureVdecCA.so \
-    vendor/realme/spaced/proprietary/vendor/lib/HEVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/HEVCSecureVdecCA.so \
     vendor/realme/spaced/proprietary/vendor/lib/VP9SecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/VP9SecureVdecCA.so \
     vendor/realme/spaced/proprietary/vendor/lib/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/arm.graphics-V1-ndk_platform.so \
     vendor/realme/spaced/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
@@ -1029,7 +1002,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/lib/hw/kmsetkey.trustonic.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/kmsetkey.trustonic.so \
     vendor/realme/spaced/proprietary/vendor/lib/hw/libMcGatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libMcGatekeeper.so \
     vendor/realme/spaced/proprietary/vendor/lib/hw/libSoftGatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libSoftGatekeeper.so \
-    vendor/realme/spaced/proprietary/vendor/lib/hw/memtrack.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.default.so \
     vendor/realme/spaced/proprietary/vendor/lib/hw/sound_trigger.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.default.so \
     vendor/realme/spaced/proprietary/vendor/lib/hw/thermal_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/thermal_hal.so \
     vendor/realme/spaced/proprietary/vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so \
@@ -1082,7 +1054,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/lib/lib3a.n3d3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.n3d3a.so \
     vendor/realme/spaced/proprietary/vendor/lib/lib3a.sensors.color.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.sensors.color.so \
     vendor/realme/spaced/proprietary/vendor/lib/lib3a.sensors.flicker.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.sensors.flicker.so \
-    vendor/realme/spaced/proprietary/vendor/lib/libAVCSecureVencCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAVCSecureVencCA.so \
     vendor/realme/spaced/proprietary/vendor/lib/libCamera_gc02m1bsymipiraw21690_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1bsymipiraw21690_E2EHDR_Preview.so \
     vendor/realme/spaced/proprietary/vendor/lib/libCamera_gc02m1bsymipiraw21690_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1bsymipiraw21690_E2EHDR_Video.so \
     vendor/realme/spaced/proprietary/vendor/lib/libCamera_gc02m1bsymipiraw21690_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1bsymipiraw21690_Face_Capture.so \
@@ -1723,7 +1694,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/lib/libdip_imem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdip_imem.so \
     vendor/realme/spaced/proprietary/vendor/lib/libdip_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdip_postproc.so \
     vendor/realme/spaced/proprietary/vendor/lib/libdre.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdre.so \
-    vendor/realme/spaced/proprietary/vendor/lib/libdynamiclog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdynamiclog.so \
     vendor/realme/spaced/proprietary/vendor/lib/libeffecthal.base.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeffecthal.base.so \
     vendor/realme/spaced/proprietary/vendor/lib/libfeature.face.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfeature.face.so \
     vendor/realme/spaced/proprietary/vendor/lib/libfeature.stereo.provider.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfeature.stereo.provider.so \
@@ -1843,7 +1813,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/lib/libnir_neon_driver_ndk.mtk.vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnir_neon_driver_ndk.mtk.vndk.so \
     vendor/realme/spaced/proprietary/vendor/lib/libnvram.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnvram.so \
     vendor/realme/spaced/proprietary/vendor/lib/libnvram_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnvram_sec.so \
-    vendor/realme/spaced/proprietary/vendor/lib/libnwk_opt_halwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnwk_opt_halwrap_vendor.so \
     vendor/realme/spaced/proprietary/vendor/lib/libnxp_extamp_intf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnxp_extamp_intf.so \
     vendor/realme/spaced/proprietary/vendor/lib/libocam_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libocam_common.so \
     vendor/realme/spaced/proprietary/vendor/lib/liboplus.aishutter.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboplus.aishutter.so \
@@ -1904,12 +1873,9 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/lib/libvpu5.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpu5.so \
     vendor/realme/spaced/proprietary/vendor/lib/libvpud_vcodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpud_vcodec.so \
     vendor/realme/spaced/proprietary/vendor/lib/libvt_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvt_custom.so \
-    vendor/realme/spaced/proprietary/vendor/lib/libwapi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwapi.so \
     vendor/realme/spaced/proprietary/vendor/lib/libwo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwo.so \
-    vendor/realme/spaced/proprietary/vendor/lib/libwpa_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwpa_client.so \
     vendor/realme/spaced/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so \
     vendor/realme/spaced/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
-    vendor/realme/spaced/proprietary/vendor/lib/meta_wifi_data.so:$(TARGET_COPY_OUT_VENDOR)/lib/meta_wifi_data.so \
     vendor/realme/spaced/proprietary/vendor/lib/mt6781/libdpframework.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6781/libdpframework.so \
     vendor/realme/spaced/proprietary/vendor/lib/mt6781/libmtk_drvb.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6781/libmtk_drvb.so \
     vendor/realme/spaced/proprietary/vendor/lib/mt6781/libnir_neon_driver.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6781/libnir_neon_driver.so \
@@ -1956,7 +1922,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/lib/vendor.mediatek.hardware.netdagent@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.netdagent@1.0.so \
     vendor/realme/spaced/proprietary/vendor/lib/vendor.mediatek.hardware.nvram@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.nvram@1.0.so \
     vendor/realme/spaced/proprietary/vendor/lib/vendor.mediatek.hardware.nvram@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.nvram@1.1.so \
-    vendor/realme/spaced/proprietary/vendor/lib/vendor.mediatek.hardware.nwk_opt@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.nwk_opt@1.0.so \
     vendor/realme/spaced/proprietary/vendor/lib/vendor.mediatek.hardware.power@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.power@1.1.so \
     vendor/realme/spaced/proprietary/vendor/lib/vendor.mediatek.hardware.power@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.power@2.0.so \
     vendor/realme/spaced/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.0.so \
@@ -1998,8 +1963,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/lib64/hi1634q_mipi_raw_21690_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hi1634q_mipi_raw_21690_tuning.so \
     vendor/realme/spaced/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so \
     vendor/realme/spaced/proprietary/vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so \
-    vendor/realme/spaced/proprietary/vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss-impl-mediatek.so \
-    vendor/realme/spaced/proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so \
     vendor/realme/spaced/proprietary/vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
     vendor/realme/spaced/proprietary/vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
     vendor/realme/spaced/proprietary/vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so \
@@ -2011,7 +1974,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/lib64/hw/kmsetkey.trustonic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/kmsetkey.trustonic.so \
     vendor/realme/spaced/proprietary/vendor/lib64/hw/libMcGatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/libMcGatekeeper.so \
     vendor/realme/spaced/proprietary/vendor/lib64/hw/libSoftGatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/libSoftGatekeeper.so \
-    vendor/realme/spaced/proprietary/vendor/lib64/hw/memtrack.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/memtrack.default.so \
     vendor/realme/spaced/proprietary/vendor/lib64/hw/sensors.mt6781.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.mt6781.so \
     vendor/realme/spaced/proprietary/vendor/lib64/hw/sound_trigger.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.default.so \
     vendor/realme/spaced/proprietary/vendor/lib64/hw/thermal_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/thermal_hal.so \
@@ -2711,7 +2673,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/lib64/libdip_imem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdip_imem.so \
     vendor/realme/spaced/proprietary/vendor/lib64/libdip_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdip_postproc.so \
     vendor/realme/spaced/proprietary/vendor/lib64/libdre.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdre.so \
-    vendor/realme/spaced/proprietary/vendor/lib64/libdynamiclog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdynamiclog.so \
     vendor/realme/spaced/proprietary/vendor/lib64/libeffecthal.base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeffecthal.base.so \
     vendor/realme/spaced/proprietary/vendor/lib64/libfeature.face.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature.face.so \
     vendor/realme/spaced/proprietary/vendor/lib64/libfeature.stereo.provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature.stereo.provider.so \
@@ -2868,7 +2829,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnir_neon_driver_ndk.mtk.vndk.so \
     vendor/realme/spaced/proprietary/vendor/lib64/libnvram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnvram.so \
     vendor/realme/spaced/proprietary/vendor/lib64/libnvram_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnvram_sec.so \
-    vendor/realme/spaced/proprietary/vendor/lib64/libnwk_opt_halwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnwk_opt_halwrap_vendor.so \
     vendor/realme/spaced/proprietary/vendor/lib64/libnxp_extamp_intf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnxp_extamp_intf.so \
     vendor/realme/spaced/proprietary/vendor/lib64/libocam_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libocam_common.so \
     vendor/realme/spaced/proprietary/vendor/lib64/liboplus.aishutter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboplus.aishutter.so \
@@ -2924,20 +2884,15 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/lib64/libvow_ap_test_nn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvow_ap_test_nn.so \
     vendor/realme/spaced/proprietary/vendor/lib64/libvpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpu.so \
     vendor/realme/spaced/proprietary/vendor/lib64/libvpu5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpu5.so \
-    vendor/realme/spaced/proprietary/vendor/lib64/libwapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwapi.so \
-    vendor/realme/spaced/proprietary/vendor/lib64/libwifitest.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifitest.so \
     vendor/realme/spaced/proprietary/vendor/lib64/libwo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwo.so \
-    vendor/realme/spaced/proprietary/vendor/lib64/libwpa_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwpa_client.so \
     vendor/realme/spaced/proprietary/vendor/lib64/libwpfa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwpfa.so \
     vendor/realme/spaced/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
     vendor/realme/spaced/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
-    vendor/realme/spaced/proprietary/vendor/lib64/meta_wifi_data.so:$(TARGET_COPY_OUT_VENDOR)/lib64/meta_wifi_data.so \
     vendor/realme/spaced/proprietary/vendor/lib64/mt6781/libdpframework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6781/libdpframework.so \
     vendor/realme/spaced/proprietary/vendor/lib64/mt6781/libmtk_drvb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6781/libmtk_drvb.so \
     vendor/realme/spaced/proprietary/vendor/lib64/mt6781/libnir_neon_driver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6781/libnir_neon_driver.so \
     vendor/realme/spaced/proprietary/vendor/lib64/mt6781/libpq_prot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6781/libpq_prot.so \
     vendor/realme/spaced/proprietary/vendor/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so \
-    vendor/realme/spaced/proprietary/vendor/lib64/nwk_opt_imp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nwk_opt_imp.so \
     vendor/realme/spaced/proprietary/vendor/lib64/ov02b1b_mipi_mono_21690_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov02b1b_mipi_mono_21690_IdxMgr.so \
     vendor/realme/spaced/proprietary/vendor/lib64/ov02b1b_mipi_mono_21690_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov02b1b_mipi_mono_21690_tuning.so \
     vendor/realme/spaced/proprietary/vendor/lib64/ov48b_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov48b_mipi_raw_IdxMgr.so \
@@ -2997,7 +2952,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.netdagent@1.0.so \
     vendor/realme/spaced/proprietary/vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.nvram@1.0.so \
     vendor/realme/spaced/proprietary/vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.nvram@1.1.so \
-    vendor/realme/spaced/proprietary/vendor/lib64/vendor.mediatek.hardware.nwk_opt@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.nwk_opt@1.0.so \
     vendor/realme/spaced/proprietary/vendor/lib64/vendor.mediatek.hardware.power@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.power@1.1.so \
     vendor/realme/spaced/proprietary/vendor/lib64/vendor.mediatek.hardware.power@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.power@2.0.so \
     vendor/realme/spaced/proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.pq@2.0.so \
@@ -3017,13 +2971,11 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.videotelephony@1.0.so \
     vendor/realme/spaced/proprietary/vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.cammidasservice@1.0.so \
     vendor/realme/spaced/proprietary/vendor/lib64/vendor.oplus.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.commondcs@1.0.so \
-    vendor/realme/spaced/proprietary/vendor/lib64/vendor.oplus.hardware.wifi.supplicant@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.wifi.supplicant@2.0.so \
     vendor/realme/spaced/proprietary/vendor/lib64/vendor.trustonic.tee.tui@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.trustonic.tee.tui@1.0.so \
     vendor/realme/spaced/proprietary/vendor/lib64/vendor.trustonic.tee@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.trustonic.tee@1.0.so \
     vendor/realme/spaced/proprietary/vendor/lib64/vendor.trustonic.tee@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.trustonic.tee@1.1.so
 
 PRODUCT_PACKAGES += \
-    libwifi-hal-mtk \
     ImsService \
     HotwordEnrollmentOKGoogleCORTEXM4 \
     mediatek-common \
@@ -3042,17 +2994,11 @@ PRODUCT_PACKAGES += \
     oplus-framework \
     com.android.hotwordenrollment.common.util \
     android.hardware.neuralnetworks@1.3-service-mtk-mdla-dsp-gpu \
-    android.hardware.usb@1.2-service-mediatekv2 \
-    android.hardware.wifi.hostapd \
-    android.hardware.wifi.supplicant \
-    gnss-mtk \
-    gnss@2.1-service-mtk \
     lbs_hidl_service@1.0 \
     manifest_android.hardware.drm@1.4-service.clearkey \
     manifest_android.hardware.drm@1.4-service.widevine \
     manifest_hwcomposer \
     manifest_media_c2_V1_1_default \
-    oplus_wifi_supplicant_device \
     manifest_oplusSensor \
     manifest_oplus_charger \
     manifest_oplus_fingerprint \
